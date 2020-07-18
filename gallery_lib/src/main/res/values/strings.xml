@@ -1,0 +1,5 @@
+<resources>
+
+    <string name="gallery_all_image">所有图片</string>
+    <string name="gallery_all_video">所有视频</string>
+</resources>

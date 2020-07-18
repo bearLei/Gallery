@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ubtech.gallery_lib" >
+
+    <application>
+        <activity
+            android:name="com.ubtech.gallery_lib.view.GalleryActivity"
+            android:screenOrientation="landscape"
+            />
+    </application>
+</manifest>
