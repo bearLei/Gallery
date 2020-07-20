@@ -1,5 +1,6 @@
 package com.ubtech.gallery_lib.view;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.ubtech.gallery_lib.Constant;
 import com.ubtech.gallery_lib.R;
+import com.ubtech.gallery_lib.adapter.Divider;
 import com.ubtech.gallery_lib.adapter.GalleryAdapter;
 import com.ubtech.gallery_lib.bean.MediaBean;
 import com.ubtech.gallery_lib.bean.MediaResponse;
@@ -64,6 +66,10 @@ public class WholeFragment extends GalleryBaseFragment {
         recyclerView = mRootView.findViewById(R.id.recycleView);
         GridLayoutManager manager = new GridLayoutManager(getActivity(), 7);
         recyclerView.setLayoutManager(manager);
+        recyclerView.addItemDecoration(Divider.builder()
+                .color(Color.WHITE)
+                .height(14)
+                .build());
         recyclerView.setAdapter(adapter);
     }
 

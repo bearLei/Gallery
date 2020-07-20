@@ -12,4 +12,15 @@
         android:layout_height="88dp"
         android:scaleType="center"
         />
+    <TextView
+        android:id="@+id/media_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        />
 </RelativeLayout>
